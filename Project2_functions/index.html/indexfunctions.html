@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html>
-<meta charset="UTF-8"></meta>
 <body>
 
+<p id="statement"></p> <!--statement is assigned as id-->
 
-<p id="Concatenate" onclick="myFunction()">Click Here!</p>
+<!--sentence is used to describe the words I am using and the += can concatenate strings-->
+<script>
+sentence = "Javascript is ";
+sentence += "Incredibly difficult for me";
+document.getElementById("statement").innerHTML = sentence;
+</script>
 
-function myFunction() {
-    var sentence = "I am learning";
-    sentence += " a lot from this book!";
-    document.getElementById("Concatenante").innerHTML = sentence;
-}
+</body>
+</html>
+
+
+
