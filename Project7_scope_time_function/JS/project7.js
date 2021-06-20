@@ -30,23 +30,23 @@ Add_numbers_1();
 Add_numbers_2();
 //X is not defined in the console log when you inspect it//
 
-var X = 10;
-function Add_numbers_1() {
-    document.write(20 + X + "<br>");
+var Y = 10;
+function Add_numbers_3() {
+    document.write(20 + Y + "<br>");
 }
-function Add_numbers_2() {
-    document.write(X + 100);
+function Add_numbers_4() {
+    document.write(Y + 100);
 }
-Add_numbers_1();
-Add_numbers_2();
+Add_numbers_3();
+Add_numbers_4();
 //The above exmaple is a global variable//
 
 function Add_numbers_3() {
-    var X = 10;
-    document.write(20 + X + "<br>");
+    var Z = 10;
+    document.write(20 + Z + "<br>");
 }
 function Add_numbers_4() {
-    document.write(X + 100);
+    document.write(Z + 100);
 }
 Add_numbers_3();
 Add_numbers_4();
