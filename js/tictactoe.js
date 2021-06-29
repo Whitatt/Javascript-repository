@@ -50,7 +50,7 @@ function placeXOrO(squareNumber) {
     //This function results in a random square being selected.
     function computersTurn() {
         //This boolean is needed for our while loop.
-        let success = falsel;
+        let success = false;
         //This variable stores a random number 0-8.
         let pickASquare;
         //This condition allows our while loop to keep trying if a square is selected already.
@@ -145,19 +145,19 @@ function audio(audioURL) {
 }
 
 //This function utilizes html canvas to draw win lines.
-function drawWinLine(coordXl, coordX2, coordY2) {
+function drawWinLine(coordX1, coordX2, coordY2) {
     //This line accesses our html canvas element.
     const canvas = document.getElementById('win-lines')
     //This line gives us access to methods and properties to use on canvas.
     const c = canvas.getContext('2d');
     //This line indicates where the start of a lines x axis is.
-    let xl = coordXl,
+    let x1 = c.coordX1,
         //This line indicates where the start of a lines y axis is.
-        yl = coordYl,
+        y1 = c.coordY1,
         //This line indicates where the end of a lines x axis is.
-        x2 = coordX2,
+        x2 = c.coordX2,
         //This line indicates where the end of a lines x axis is.
-        y2 = coordY2,
+        y2 = c.coordY2,
         //This variable stores temporary x axis data we update in our animation loop.
         x = x1,
         //This variable stores temporary y axis data we update in our animation loop.
@@ -195,7 +195,7 @@ function drawWinLine(coordXl, coordX2, coordY2) {
         }
         //This condition is similar to the one above.
         //This is necessary for the 6, 4, 2 win condition
-        if (xl <= x2 && y1 <= y2) {
+        if (x1 <= x2 && y1 <= y2) {
             if (x < x2) { x += 10; }
             if (y > y2) { y -= 10; }
             if (x >= x2 && y <= y2) { cancelAnimationFrame(animationLoop); }
@@ -216,7 +216,7 @@ function drawWinLine(coordXl, coordX2, coordY2) {
     //This line disallows clicking while the win sound is playing
     disableClick();
     //This line plays the win sounds.
-    audio('./media.winGame.mp3');
+    audio('./media/winGame.mp3');
     //This line calls our main animation loop.
     animateLineDrawing();
     //This line waits 1 second. Then, clears canvas, resets game, and allows clicking again.
