@@ -1,3 +1,22 @@
+body {
+    background-color: rgb(9, 153, 243);
+}
+
+h1 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+}
+
+h3 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font: black;
+}
+
+div {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+}
+
 #menuBG {
     width:400px;
     height:470px;
@@ -47,22 +66,5 @@
     height:40px
     }
 
-body {
-    background-color: rgb(9, 153, 243);
-    }
 
-h1 {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
-    }
-
-h3 {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font: black;
-    }
-
-div {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: black;
-    }
 
