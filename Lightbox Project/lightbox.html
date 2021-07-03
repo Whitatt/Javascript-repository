@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="CSS/lightbox.css"/>
+<script src="JS/lightbox.js"></script>
+<!-- Images used to open the lightbox -->
+<div class="row">
+  <div class="column">
+    <img src="images/ellie.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="images/ellie1.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="images/ellie2.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="images/joel.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+</div>
+
+<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="images/ellie_wide.jpg" style="width:%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="images/ellie1_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="images/ellie2_wide.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="images/joel_wide.jpg" style="width:100%">
+    </div>
+
+    <!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="imgages/ellie.jpg" onclick="currentSlide(1)" alt="ellie">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="images/ellie1.jpg" onclick="currentSlide(2)" alt="ellie1">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="images/ellie2.jpg" onclick="currentSlide(3)" alt="ellie2">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="images/joel.jpg" onclick="currentSlide(4)" alt="joel">
+    </div>
+  </div>
+</div>
