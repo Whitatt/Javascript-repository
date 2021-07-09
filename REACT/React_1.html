@@ -21,7 +21,7 @@
 
         var start_Counting = new Date().getTime();
         setInterval(function() {
-            ReactDom.render(
+            ReactDOM.render(
                 counter_Factory({time_Passed: new Date().getTime() - start_Counting}),
                 document.getElementById('My_React_Code')
             );
